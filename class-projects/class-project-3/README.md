@@ -1,1 +1,1 @@
-Hosted on /_odi ubacit link_/
+Hosted on https://hci-2023-24-ruddy.vercel.app/
