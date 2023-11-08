@@ -18,7 +18,7 @@ export default function Mugs() {
 				<Link href="/accessories/thermoses">Travel Cups and Thermoses</Link>
 			</nav>
 			<span className="text">Coffee Mugs and Cups</span>
-			{mugs.map(mug => <div>
+			{mugs.map(mug => <div key={mug["id"]}>
 				<Link href={`./mugs/${mug["id"]}`}>
 					<h2>{mug["name"]}</h2>
 					<span>{mug["description"]}</span>
