@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	overflow-y: hidden;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-evenly;
+	background-color: brown;
+}
+
+.subNavbar {
+	margin: 10px 0;
+	padding: 5px 100px;
+	display: flex;
+	justify-content: space-evenly;
+	background-color: burlywood;
+	color: black;
+}
+
+.text {
+	font-size: 40px;
+}
