@@ -1,0 +1,409 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subNavbar {
+  margin: 10px 0;
+  padding: 5px 100px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: burlywood;
+  color: black;
+}
+
+.text {
+  font-size: 40px;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+}
+
+.linksContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.link {
+  color: #693004;
+  text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-decoration-line: underline;
+  margin-left: 30px;
+}
+
+.sectionContainer,
+.sectionContainerAcc {
+  display: flex;
+  align-items: center;
+  gap: 250px;
+  padding: 100px;
+}
+
+.sectionTextContainer {
+  align-items: center;
+}
+
+h2 {
+  color: #000;
+  font-family: Arial;
+  font-size: 76px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+
+p {
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.heroImageCoffee {
+  width: 250%;
+}
+
+.heroImageAcc {
+  width: 500%;
+}
+
+.brownBar {
+  background-color: #693004;
+  height: 150px;
+  display: block;
+  min-height: 1px;
+  width: 100vw;
+  margin: 150px 0;
+}
+
+.sectionTitle {
+  color: #000;
+  text-align: center;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.gridElement {
+  width: 40%;
+  border-radius: 20px;
+  background: rgba(105, 48, 4, 0.5);
+  padding: 50px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h3 {
+  color: #000;
+  font-family: Arial;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 25px 0;
+}
+
+.gridElementButton {
+  border-radius: 20px;
+  background: rgba(105, 48, 4, 0.5);
+  color: #fff;
+  text-align: center;
+  font-family: Arial;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  padding: 20px;
+  margin-top: 25px;
+  display: inline;
+  width: fit-content;
+}
+
+.gridButtonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gridMoreButton {
+  display: inline;
+  color: #fff;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  padding: 20px;
+  margin-top: 25px;
+  display: none;
+}
+
+.footer {
+  display: flex;
+  background-color: rgba(105, 48, 4, 0.85);
+  margin-top: 200px;
+  width: 100%;
+  padding: 65px;
+  flex-direction: column;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 100px;
+}
+
+.footerColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  width: 300px;
+}
+
+.footerColumn:nth-of-type(2),
+.footerColumn:nth-of-type(3) {
+  align-items: flex-start;
+}
+
+.footerText {
+  color: #fff;
+  font-family: Arial;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+h4 {
+  color: #fff;
+  text-shadow: 10px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Arial;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 25px;
+}
+
+.footerLink,
+.footerLinkPhone {
+  color: #fff;
+  font-family: Arial;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.footerLinkPhone {
+  margin-top: 20px;
+}
+
+.footerMedia {
+  margin-top: 20px;
+}
+
+.phoneIcon,
+.icon {
+  display: inline;
+}
+
+.icon {
+  width: 50px;
+}
+
+.copyright {
+  color: #e7a877;
+  text-align: center;
+  font-family: Arial;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 100px;
+}
+
+.navbarMobile {
+  display: none;
+  background-color: #693004;
+  padding: 0 20px 0 0;
+}
+
+.mobileLogo {
+  width: 150px;
+}
+
+.hamburger {
+  width: 100px;
+  cursor: pointer;
+}
+
+.ofHidden {
+  overflow: hidden;
+}
+
+.dropdown {
+  height: calc(100vh - 150px);
+  background-color: #86420e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.linkMobile {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+}
+
+.accButton {
+  display: none;
+}
+
+.footerMobile {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    display: none;
+  }
+
+  .navbarMobile {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sectionContainer {
+    flex-direction: column-reverse;
+    gap: 25px;
+  }
+
+  .sectionContainerAcc {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .accText {
+    display: none;
+  }
+
+  .accButton {
+    border-radius: 20px;
+    background: #693004;
+    display: flex;
+    color: #fff;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 10px 25px;
+    float: right;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 26px;
+  }
+
+  .brownBar {
+    margin: 0 0;
+  }
+
+  .sectionTitle {
+    font-size: 50px;
+  }
+
+  .grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gridElement {
+    width: 76%;
+  }
+
+  .gridText {
+    display: none;
+  }
+
+  .gridElementButton,
+  .gridMoreButton {
+    font-size: 36px;
+  }
+
+  .gridMoreButton {
+    display: inline;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .footerMobile {
+    display: flex;
+    display: flex;
+    background-color: rgba(105, 48, 4, 0.85);
+    margin-top: 100px;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+
+  .sitemap {
+    margin-top: 50px;
+  }
+
+  .copyright {
+    font-size: 24px;
+    margin: 35px 0 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .gridElementButton,
+  .gridMoreButton {
+    font-size: 28px;
+  }
+}
