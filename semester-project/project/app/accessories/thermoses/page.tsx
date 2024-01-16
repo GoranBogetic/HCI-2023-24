@@ -1,6 +1,4 @@
-import Image from 'next/image';
 import Link from 'next/link';
-import { it } from 'node:test';
 
 export interface TypeThermosListItem {
   name: string;
@@ -77,7 +75,7 @@ const Thermoses = async () => {
           <div key={thermos.name}>
             <h3>{thermos.name}</h3>
             <p>{thermos.description}</p>
-            <Image src={thermos.imageLink} alt={thermos.name} />
+            <img src={thermos.imageLink} alt={thermos.name} />
           </div>
         ))}
       </div>
