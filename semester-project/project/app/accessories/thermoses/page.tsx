@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { it } from 'node:test';
 
@@ -47,8 +48,6 @@ const Thermoses = async () => {
         data: ThermosCollectionResponse;
       };
 
-      console.log(response.json());
-
       const thermoses: TypeThermosListItem[] = body.data.thermosCollection.items.map((item) => ({
         name: item.name,
         description: item.description,
@@ -78,7 +77,7 @@ const Thermoses = async () => {
           <div key={thermos.name}>
             <h3>{thermos.name}</h3>
             <p>{thermos.description}</p>
-            <img src={thermos.imageLink} />
+            <Image src={thermos.imageLink} alt={thermos.name} />
           </div>
         ))}
       </div>
