@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 export interface TypeThermosListItem {
   name: string;
@@ -34,9 +34,9 @@ const Thermoses = async () => {
   const getAllThermoses = async (): Promise<TypeThermosListItem[]> => {
     try {
       const response = await fetch(baseUrl, {
-        method: 'POST',
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
           Authorization: `Bearer Ok1oRhn9O3E0Ild34lXPsTw_4pWQo5SwBNq0O6qoNJc`,
         },
         body: JSON.stringify({ query: gqlGetThermosesQuery }),
@@ -46,11 +46,12 @@ const Thermoses = async () => {
         data: ThermosCollectionResponse;
       };
 
-      const thermoses: TypeThermosListItem[] = body.data.thermosCollection.items.map((item) => ({
-        name: item.name,
-        description: item.description,
-        imageLink: item.imageLink,
-      }));
+      const thermoses: TypeThermosListItem[] =
+        body.data.thermosCollection.items.map((item) => ({
+          name: item.name,
+          description: item.description,
+          imageLink: item.imageLink,
+        }));
 
       return thermoses;
     } catch (error) {
@@ -64,20 +65,29 @@ const Thermoses = async () => {
 
   return (
     <h1>
-      <nav className="subNavbar">
-        <Link href="/accessories">Accessories</Link>
-        <Link href="/accessories/mugs">Coffee Mugs and Cups</Link>
-        <Link href="/accessories/thermoses">Travel Cups and Thermoses</Link>
+      <nav className='subNavbar'>
+        <Link href='/accessories/mugs'>Coffee Mugs and Cups</Link>
+        <Link href='/accessories/thermoses'>Travel Cups and Thermoses</Link>
       </nav>
-      <span className="text">Travel Cups and Thermoses</span>
-      <div>
-        {thermoses.map((thermos) => (
-          <div key={thermos.name}>
-            <h3>{thermos.name}</h3>
-            <p>{thermos.description}</p>
-            <img src={thermos.imageLink} alt={thermos.name} />
+      <h1 className='mugText'>Travel Cups and Thermoses</h1>
+
+      <div className='mugs'>
+        {thermoses.map((thermos, i) => (
+          <div className='mug' key={i}>
+            <a>
+              <div>
+                <h2>{thermos["name"]}</h2>
+                <p>{thermos["description"]}</p>
+              </div>
+              <img src={thermos["imageLink"]} alt={`${thermos.name}`} />
+            </a>
           </div>
         ))}
+        {thermoses.length === 0 && (
+          <div className='emptySearch'>
+            No mugs found, try a different search!
+          </div>
+        )}
       </div>
     </h1>
   );
