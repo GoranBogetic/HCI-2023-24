@@ -7,7 +7,7 @@ export default function Blogs() {
   return (
     <>
       <h1 className='blogsTitle'>Blogs</h1>
-      <h1 className='blogContainer'>
+      <div className='blogContainer'>
         {BlogPosts.posts.map((post) => (
           <Link href={`./blog/${post.Id}`} key={post.Id}>
             <div key={post.Id} className='post'>
@@ -16,13 +16,11 @@ export default function Blogs() {
                 <p>{post.Description}</p>
               </div>
               {post.Image && <img src={post.Image} />}
-              <Link className='arrow' href={`./blog/${post.Id}`}>
-                {">"}
-              </Link>
+              <p className='arrow'>{">"}</p>
             </div>
           </Link>
         ))}
-      </h1>
+      </div>
     </>
   );
 }

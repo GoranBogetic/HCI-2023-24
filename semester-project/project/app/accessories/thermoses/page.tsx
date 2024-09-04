@@ -64,10 +64,10 @@ const Thermoses = async () => {
   const thermoses = await getAllThermoses();
 
   return (
-    <h1>
+    <div>
       <nav className='subNavbar'>
-        <Link href='/accessories/mugs'>Coffee Mugs and Cups</Link>
-        <Link href='/accessories/thermoses'>Travel Cups and Thermoses</Link>
+        <Link href='/accessories/mugs'>Coffee Mugs</Link>
+        <Link href='/accessories/thermoses'>Travel Cups</Link>
       </nav>
       <h1 className='mugText'>Travel Cups and Thermoses</h1>
 
@@ -89,7 +89,7 @@ const Thermoses = async () => {
           </div>
         )}
       </div>
-    </h1>
+    </div>
   );
 };
 

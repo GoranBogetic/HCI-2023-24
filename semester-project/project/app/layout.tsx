@@ -3,7 +3,6 @@
 import { useState } from "react";
 import "./globals.css";
 import Link from "next/link";
-import Head from "next/head";
 import { usePathname } from "next/navigation";
 
 export default function RootLayout({
@@ -21,7 +20,9 @@ export default function RootLayout({
       <body className={`${isDropdownActive ? "ofHidden" : ""}`}>
         <nav className='navbar'>
           <div className='logo'>
-            <img src='/logo.svg' />
+            <Link href={"/"}>
+              <img src='/logo.svg' />
+            </Link>
           </div>
           <div className='linksContainer'>
             <Link href='/' className={`link ${pathname === "/" && "active"}`}>
@@ -48,9 +49,11 @@ export default function RootLayout({
           </div>
         </nav>
         <nav className='navbarMobile'>
-          <img src='logo-white.svg' className='mobileLogo' />
+          <Link href={"/"}>
+            <img src='/logo-white.svg' className='mobileLogo' />
+          </Link>
           <img
-            src='hamburger.svg'
+            src='/hamburger.svg'
             className='hamburger'
             onClick={() => setIsDropdownActive(!isDropdownActive)}
           />
@@ -116,12 +119,39 @@ export default function RootLayout({
               <span className='footerLinkPhone'>
                 <img src='/phoneIcon.svg' className='phoneIcon' /> +385 123 0000
               </span>
-              <span className='footerLink'>design@fesb.hr</span>
+              <span className='footerLink'>
+                <img src='/email.svg' className='emailIcon' />
+                design@fesb.hr
+              </span>
               <span className='footerMedia'>
-                <img src='/fb.svg' className='icon' />
-                <img src='/inst.svg' className='icon' />
-                <img src='/lIn.svg' className='icon' />
-                <img src='/x.svg' className='icon' />
+                <img
+                  src='/fb.svg'
+                  className='icon'
+                  onClick={() => {
+                    window.open("https://www.facebook.com/", "_blank");
+                  }}
+                />
+                <img
+                  src='/inst.svg'
+                  className='icon'
+                  onClick={() => {
+                    window.open("https://www.instagram.com/", "_blank");
+                  }}
+                />
+                <img
+                  src='/lIn.svg'
+                  className='icon'
+                  onClick={() => {
+                    window.open("https://www.linkedin.com/", "_blank");
+                  }}
+                />
+                <img
+                  src='/x.svg'
+                  className='icon'
+                  onClick={() => {
+                    window.open("https://www.x.com/", "_blank");
+                  }}
+                />
               </span>
             </div>
           </div>
@@ -130,19 +160,48 @@ export default function RootLayout({
           </div>
         </div>
         <div className='footerMobile'>
-          <img src='logo-white.svg' className='mobileLogo' />
+          <Link href={"/"}>
+            <img src='/logo-white.svg' className='mobileLogo' />
+          </Link>
           <h4>Contact Us</h4>
           <span className='footerLink'>Ruđera Boškovića 32</span>
           <span className='footerLink'>21000, Split, Croatia</span>
           <span className='footerLinkPhone'>
             <img src='/phoneIcon.svg' className='phoneIcon' /> +385 123 0000
           </span>
-          <span className='footerLink'>design@fesb.hr</span>
+          <span className='footerLink'>
+            <img src='/email.svg' className='emailIcon' />
+            design@fesb.hr
+          </span>
           <span className='footerMedia'>
-            <img src='/fb.svg' className='icon' />
-            <img src='/inst.svg' className='icon' />
-            <img src='/lIn.svg' className='icon' />
-            <img src='/x.svg' className='icon' />
+            <img
+              src='/fb.svg'
+              className='icon'
+              onClick={() => {
+                window.open("https://www.facebook.com/", "_blank");
+              }}
+            />
+            <img
+              src='/inst.svg'
+              className='icon'
+              onClick={() => {
+                window.open("https://www.instagram.com/", "_blank");
+              }}
+            />
+            <img
+              src='/lIn.svg'
+              className='icon'
+              onClick={() => {
+                window.open("https://www.linkedin.com/", "_blank");
+              }}
+            />
+            <img
+              src='/x.svg'
+              className='icon'
+              onClick={() => {
+                window.open("https://www.x.com/", "_blank");
+              }}
+            />
           </span>
           <h4 className='sitemap'>Sitemap</h4>
           <Link href='/' className='footerLink'>

@@ -36,7 +36,9 @@ export default function Home() {
             accessories to match your taste preferences and brewing style,
             creating a truly delightful coffee moment with every sip.
           </p>
-          <button className='accButton'>More</button>
+          <Link href={"/accessories/mugs"}>
+            <button className='accButton'>More</button>
+          </Link>
         </div>
       </div>
       <div className='brownBar'> </div>
@@ -55,8 +57,12 @@ export default function Home() {
               </p>
             </div>
             <div className='gridButtonContainer'>
-              <button className='gridElementButton'>Shop</button>
-              <span className='gridMoreButton'>More</span>
+              <Link href={"/accessories/mugs"}>
+                <button className='gridElementButton'>Shop</button>
+              </Link>
+              <Link href={"/blog"}>
+                <span className='gridMoreButton'>More</span>
+              </Link>
             </div>
           </div>
           <div className='gridElement'>
@@ -72,8 +78,12 @@ export default function Home() {
               </p>
             </div>
             <div className='gridButtonContainer'>
-              <button className='gridElementButton'>Shop</button>
-              <span className='gridMoreButton'>More</span>
+              <Link href={"/accessories/mugs"}>
+                <button className='gridElementButton'>Shop</button>
+              </Link>
+              <Link href={"/blog"}>
+                <span className='gridMoreButton'>More</span>
+              </Link>
             </div>
           </div>
           <div className='gridElement'>
@@ -88,8 +98,12 @@ export default function Home() {
               </p>
             </div>
             <div className='gridButtonContainer'>
-              <button className='gridElementButton'>Shop</button>
-              <span className='gridMoreButton'>More</span>
+              <Link href={"/accessories/mugs"}>
+                <button className='gridElementButton'>Shop</button>
+              </Link>
+              <Link href={"/blog"}>
+                <span className='gridMoreButton'>More</span>
+              </Link>
             </div>
           </div>
           <div className='gridElement'>
@@ -104,8 +118,12 @@ export default function Home() {
               </p>
             </div>
             <div className='gridButtonContainer'>
-              <button className='gridElementButton'>Shop</button>
-              <span className='gridMoreButton'>More</span>
+              <Link href={"/accessories/mugs"}>
+                <button className='gridElementButton'>Shop</button>
+              </Link>
+              <Link href={"/blog"}>
+                <span className='gridMoreButton'>More</span>
+              </Link>
             </div>
           </div>
         </div>
