@@ -364,6 +364,7 @@ h4 {
 
 .icon {
   width: 50px;
+  cursor: pointer;
 }
 
 .copyright {
