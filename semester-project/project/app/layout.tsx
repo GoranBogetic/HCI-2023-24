@@ -4,6 +4,7 @@ import { useState } from "react";
 import "./globals.css";
 import Link from "next/link";
 import Head from "next/head";
+import { usePathname } from "next/navigation";
 
 export default function RootLayout({
   children,
@@ -11,6 +12,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const [isDropdownActive, setIsDropdownActive] = useState(false);
+
+  const pathname = usePathname();
 
   return (
     <html lang='en'>
@@ -21,16 +24,25 @@ export default function RootLayout({
             <img src='/logo.svg' />
           </div>
           <div className='linksContainer'>
-            <Link href='/' className='link'>
+            <Link href='/' className={`link ${pathname === "/" && "active"}`}>
               Home
             </Link>
-            <Link href='/accessories/mugs' className='link'>
+            <Link
+              href='/accessories/mugs'
+              className={`link ${pathname.includes("accessories") && "active"}`}
+            >
               Accessories
             </Link>
-            <Link href='/blog' className='link'>
+            <Link
+              href='/blog'
+              className={`link ${pathname.includes("blog") && "active"}`}
+            >
               Blog
             </Link>
-            <Link href='/about' className='link'>
+            <Link
+              href='/about'
+              className={`link ${pathname.includes("about") && "active"}`}
+            >
               About Us
             </Link>
           </div>
