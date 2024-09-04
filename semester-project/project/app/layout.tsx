@@ -121,7 +121,7 @@ export default function RootLayout({
                 <img src='/fb.svg' className='icon' />
                 <img src='/inst.svg' className='icon' />
                 <img src='/lIn.svg' className='icon' />
-                <img src='/X.svg' className='icon' />
+                <img src='/x.svg' className='icon' />
               </span>
             </div>
           </div>
@@ -142,7 +142,7 @@ export default function RootLayout({
             <img src='/fb.svg' className='icon' />
             <img src='/inst.svg' className='icon' />
             <img src='/lIn.svg' className='icon' />
-            <img src='/X.svg' className='icon' />
+            <img src='/x.svg' className='icon' />
           </span>
           <h4 className='sitemap'>Sitemap</h4>
           <Link href='/' className='footerLink'>
