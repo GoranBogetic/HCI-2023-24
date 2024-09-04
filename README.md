@@ -1,7 +1,8 @@
 Semestar-project deployed -> [TheCaffe](https://hci-2023-24-sp.vercel.app/)<br />
-Semestar-project report -> [ReportNotion](https://diligent-hurricane-92b.notion.site/HCI-report-841eb95fb6e648c5879a0bd28817c06a?pvs=4)<br />
+Semestar-project report -> [NotionReport](https://diligent-hurricane-92b.notion.site/HCI-report-130ab2f13ac74205b51702ea18583d0b?pvs=4)<br />
 
 -----
+<br />
 
 Week 1&2
 | Implemented     | Problems |
@@ -13,8 +14,10 @@ Week 1&2
 
 <br />
 <br />
-<br />
 
-Done later<br />
+Week 3&4
 | Implemented     | Problems |
 | --------------- | -------- |
+| Updated design  |
+| Blog            |
+| Bug fixing      |
