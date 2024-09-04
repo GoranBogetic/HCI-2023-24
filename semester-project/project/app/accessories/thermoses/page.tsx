@@ -67,9 +67,9 @@ const Thermoses = async () => {
     <div>
       <nav className='subNavbar'>
         <Link href='/accessories/mugs'>Coffee Mugs</Link>
-        <Link href='/accessories/thermoses'>Travel Cups</Link>
+        <Link href='/accessories/thermoses'>Thermoses</Link>
       </nav>
-      <h1 className='mugText'>Travel Cups and Thermoses</h1>
+      <h1 className='mugText'>Thermoses</h1>
 
       <div className='mugs'>
         {thermoses.map((thermos, i) => (

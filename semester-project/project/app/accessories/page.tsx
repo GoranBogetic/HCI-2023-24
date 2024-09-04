@@ -5,7 +5,7 @@ export default function Accesories() {
     <h1>
       <nav className='subNavbar'>
         <Link href='/accessories/mugs'>Coffee Mugs</Link>
-        <Link href='/accessories/thermoses'>Travel Cups</Link>
+        <Link href='/accessories/thermoses'>Thermoses</Link>
       </nav>
       <span className='text'>Accessories</span>
     </h1>

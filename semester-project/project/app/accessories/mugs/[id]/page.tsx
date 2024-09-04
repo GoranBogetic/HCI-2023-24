@@ -21,8 +21,8 @@ export default function Mugs({ params }: { params: { id: number } }) {
   return (
     <div>
       <nav className='subNavbar'>
-        <Link href='/accessories/mugs'>Coffee Mugs and Cups</Link>
-        <Link href='/accessories/thermoses'>Travel Cups and Thermoses</Link>
+        <Link href='/accessories/mugs'>Coffee Mugs</Link>
+        <Link href='/accessories/thermoses'>Thermoses</Link>
       </nav>
       {mug && (
         <div className='singleMug'>
